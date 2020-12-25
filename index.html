@@ -30,47 +30,70 @@
       body {
         font-size: 18px;
         font-family: 'Kumbh Sans', sans-serif;
+        background-image: url('./images/bg-pattern-card.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
       }
     </style>
   </head>
   <body>
-    <main>
+    <main class="w-screen h-screen flex justify-center items-center">
       <!-- card -->
-      <div>
+      <div
+        class="w-11/12 mx-auto bg-white rounded-xl shadow-2xl max-w-sm text-center"
+      >
+        <!-- images -->
+        <img
+          src="./images/bg-pattern-card.svg"
+          alt="card pattern"
+          class="rounded-t-xl w-full relative z-10"
+        />
+        <img
+          src="./images/image-victor.jpg"
+          alt="Victor headshot"
+          class="w-28 h-28 rounded-full mx-auto -mt-14 border-4 border-white relative z-20"
+        />
         <!-- content -->
-        <div>
-          <h1>Victor Crest</h1>
-          <span>26</span>
-          <p>London</p>
+        <div class="pt-6 pb-4">
+          <h1 class="font-bold text-lg mb-2">
+            Victor Crest
+            <span class="font-normal ml-2" style="color: hsl(0, 0%, 59%)"
+              >26</span
+            >
+          </h1>
+          <p class="text-sm" style="color: hsl(0, 0%, 59%)">London</p>
         </div>
 
         <hr />
 
         <!-- stats -->
-        <div>
+        <div class="flex justify-around items-center p-4">
           <!-- followers -->
           <div>
-            <h3>80K</h3>
-            <p>Followers</p>
+            <h3 class="text-lg font-bold">80K</h3>
+            <p class="text-xs" style="color: hsl(0, 0%, 59%)">Followers</p>
           </div>
           <!-- likes -->
           <div>
-            <h3>803K</h3>
-            <p>Likes</p>
+            <h3 class="text-lg font-bold">803K</h3>
+            <p class="text-xs" style="color: hsl(0, 0%, 59%)">Likes</p>
           </div>
           <!-- photos -->
           <div>
-            <h3>1.4K</h3>
-            <p>Photos</p>
+            <h3 class="text-lg font-bold">1.4K</h3>
+            <p class="text-xs" style="color: hsl(0, 0%, 59%)">Photos</p>
           </div>
         </div>
       </div>
     </main>
-    <div>
+    <footer class="w-full text-xs text-center">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        class="underline"
         >Frontend Mentor</a
       >. Coded by Skye Brown.
-    </div>
+    </footer>
   </body>
 </html>
